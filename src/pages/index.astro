@@ -2,15 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import AppStoreButton from '../components/AppStoreButton.astro';
 import GitHubButton from '../components/GitHubButton.astro';
+
+import { Image } from 'astro:assets';
 ---
 
 <Layout title="Home">
 	<div class="max-w-6xl mx-auto px-4 py-20">
 		<div class="text-center">
-			<img
+			<Image
 				src="https://cdn.nichokas.us.kg/app-icon.png"
 				alt="EmojiUtils Icon"
 				class="w-32 h-32 rounded-[22px] mx-auto shadow-lg"
+				inferSize={true}
 			/>
 			<h1 class="mt-8 text-5xl font-semibold">EmojiUtils</h1>
 			<p class="mt-4 text-xl text-[#86868b] max-w-2xl mx-auto">
